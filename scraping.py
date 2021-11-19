@@ -62,7 +62,7 @@ def featured_image(browser):
     browser.visit(url)
 
     # Find and click the full image button
-    full_image_elem = browser.find_by_tag('button')[1]
+    full_image_elem = browser.find_by_tag('button')[0]
     full_image_elem.click()
 
     # Parse the resulting html with soup
